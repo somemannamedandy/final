@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="bootstrap template">  <!--Description for search engine-->
+	<meta name="keywords" content="HTML,CSS,SCSS,JavaScript,Bootstrap"> <!--keywords for search engine-->
+	<meta name="author" content="Andy Basyn">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!--Scale viewport "shrink-to-fit"default yes => can zoom on mobile if no,you can no longer zoom-->
+	<link rel="icon" href="#" type="image/gif" sizes="16x16">
+	<!--bootstrap.min.css-->
+	<link rel="stylesheet" href="bootstrap-4.1.3/css/bootstrap.min.css">
+	<!--Full Calendar-->
+	<link rel="stylesheet" href="assets/css/fullcalendar.min.css">
+	<!--style.css-->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!--FONT AWESOME-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<!--inulr-->
+	<title>mijn account</title>
+</head>
+<body class="container-fluid p-0">
+<div class="col-12">
+	<div class="row">
+		<div class="s3-sidemenu-wrap col-lg-3 p-0">
+			<!--side bar start-->
+			<aside class="s3-side-bar s3-background-darkblue" style="height: 100vh;">
+				
+				
+				<ul class="list-group list-group-flush pt-lg-5">
+					<li class="s3-list-style-none list-group-item s3-background-darkblue s3-sidemenu-item">
+						<a href="index.html"
+						   class="text-white text-capitalize s3-text-deco-none d-block text-center s3-text-deco-none"><span><i class="fas fa-calendar-alt s3-text-lightblue"></i></span> calendar</a>
+					</li>
+					<li class="s3-list-style-none list-group-item s3-background-darkblue s3-sidemenu-item">
+						<a href="users.html" class="text-white text-capitalize s3-text-deco-none d-block text-center s3-text-deco-none"><span><i class="far fa-user s3-text-lightblue"></i></span> users</a>
+					</li>
+				</ul>
+			</aside>
+			<!--side bar stop-->
+		</div>
+		<div class="col-12 s3-content-wrap">
+			<header>
+				<!--start nav-->
+				<nav class="navbar navbar-expand-lg navbar-light bg-white">
+					
+					<div class="row w-100">
+						<!--nav small start-->
+						<div class="col-12 d-block d-lg-none">
+							<li class="nav-item dropdown ml-lg-auto mx-auto mx-lg-0" id="s3-toggle-collapse-small">
+								<a class="nav-link d-block text-center" role="button"  aria-haspopup="true" aria-expanded="false" data-toggle="collapse" href="#s3-collapse-small" aria-controls="s3-collapse-small">
+									<span><img src="assets/images/profilepic.png" alt="profile" class="img-fluid ml-auto mx-auto"></span>
+								</a>
+								<div class="d-flex justify-content-center">
+									<a href="search.html" class="nav-link"><i class="s3-text-darkblue fas fa-search"></i></a>
+									<a class="nav-link" href="#messages"><i class="s3-text-darkblue fas fa-envelope"></i></a>
+									<a class="nav-link" href="#meldingen"><i class="s3-text-darkblue fas fa-bell"></i></a>
+									<a class="nav-link dropdown-toggle " href="#" id="hamburgerMenuDropdownsm" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fas fa-bars s3-text-darkblue"></i>
+									</a>
+									<div class="dropdown-menu" aria-labelledby="hamburgerMenuDropdownsm">
+										<a href="index.html"
+										   class="text-dark text-capitalize s3-text-deco-none d-block text-center s3-text-deco-none"><span><i class="fas fa-calendar-alt s3-text-lightblue"></i></span> calendar</a>
+										<a href="users.html" class="text-dark text-capitalize s3-text-deco-none d-block text-center s3-text-deco-none"><span><i class="far fa-user s3-text-lightblue"></i></span> users</a>
+									</div>
+								
+								</div>
+								<div class="collapse " id="s3-collapse-small">
+									
+									<!--add additional options here (below the divider)-->
+									<!--<a class="dropdown-item text-capitalize text-dark" href="settings.html">ADDITIONAL OPTION</a>-->
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item text-capitalize text-dark text-center" href="settings.html">settings</a>
+									<a class="dropdown-item text-capitalize text-dark text-center" href="login.html">log out</a>
+								</div>
+							</li>
+						</div>
+						<!--nav small end-->
+						
+						<!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>-->
+						
+						
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav w-100">
+								<!--side bar collapse toggle-->
+								<li class="nav-item  pt-3 d-none d-lg-block">
+									<a class="nav-link s3-toggleSideMenu" href="#"><i class="fas fa-bars scr3-text-darkblue"></i></a>
+								</li>
+								<!--search link-->
+								<li class="nav-item pt-3  mx-auto mx-lg-0 d-flex flex-lg-grow-1">
+									<a href="search.html" class="nav-link"><i class="s3-text-darkblue fas fa-search"></i></a>
+								</li>
+								<!--view messages-->
+								<li class="nav-item pt-3 ml-lg-auto mx-auto mx-lg-0 position-relative">
+									<a class="nav-link" href="#messages"><i class="s3-text-darkblue fas fa-envelope"></i></a>
+									<!--counter-->
+									<div class="s3-message-count position-absolute bg-primary border border-white"><p class="text-white text-center">1</p></div>
+								</li>
+								<!--view notifications-->
+								<li class="nav-item pt-3 ml-lg-auto mx-auto mx-lg-0 position-relative">
+									<a class="nav-link" href="#meldingen"><i class="s3-text-darkblue fas fa-bell"></i></a>
+									<!--counter-->
+									<div class="s3-notification-count position-absolute bg-primary border border-white"><p class="text-white text-center">1</p></div>
+								</li>
+								
+								<!--profile dropdown start-->
+								<li class="nav-item dropdown ml-lg-auto mx-auto mx-lg-0">
+									<a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span><img src="assets/images/profilepic.png" alt="profile" class="img-fluid ml-auto"></span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+										<a class="dropdown-item text-capitalize text-dark" href="settings.html">settings</a>
+										<!--add additional options here (above the divider)-->
+										<!--<a class="dropdown-item text-capitalize text-dark" href="settings.html">ADDITIONAL OPTION</a>-->
+										<div class="dropdown-divider"></div>
+										<a class="dropdown-item text-capitalize text-dark" href="login.html">log out</a>
+									</div>
+								</li>
+								<!--profile dropdown end-->
+								<li class="nav-item dropdown ml-lg-auto mx-auto mx-lg-0 d-block d-lg-none">
+									<a class="nav-link dropdown-toggle " href="#" id="hamburgerMenuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fas fa-bars s3-text-darkblue"></i>
+									</a>
+									<div class="dropdown-menu" aria-labelledby="hamburgerMenuDropdown d-none d-md-block">
+										<a href="index.html"
+										   class="text-dark text-capitalize s3-text-deco-none d-block text-center s3-text-deco-none"><span><i class="fas fa-calendar-alt s3-text-lightblue"></i></span> calendar</a>
+										<a href="users.html" class="text-dark text-capitalize s3-text-deco-none d-block text-center s3-text-deco-none"><span><i class="far fa-user s3-text-lightblue"></i></span> users</a>
+									</div>
+								</li>
+							</ul>
+						
+						</div>
+					
+					</div>
+				</nav>
+				<!--end nav-->
+			</header>
+			<main>
+				<section class="d-flex justify-content-between flex-column flex-lg-row mt-5">
+					<div class="d-flex">
+						<h1 class="mb-4 s4_h1title align-self-center">Users <span>(128)</span></h1>
+						<button class="btn s4_adduser mt-1 ml-4 rounded-circle" data-toggle="modal" data-target=".user-modal-lg"><i class="fas fa-plus"></i></button>
+						<div class="modal fade user-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-lg">
+								<div class="modal-content py-4 px-4">
+									<button type="button" class="close ml-auto" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+									<h4 class="pb-3">Gebruiker toevoegen:</h4>
+									<form action="wis">
+										<div class="form-row">
+											<div class="col pl-0">
+												<label class="mb-1">Naam:</label>
+												<input type="text" class="form-control" placeholder="Voornaam" required>
+											</div>
+											<div class="col">
+												<label class="mb-1"> Achternaam:</label>
+												<input type="text" class="form-control" placeholder="Achternaam" required>
+											</div>
+										</div>
+										<div class="form-row mt-3">
+											<label for="inputState">Functie:</label>
+											<select id="inputState" class="form-control">
+												<option selected>CEO</option>
+												<option>UW Designer</option>
+												<option>Web Designer</option>
+												<option>Account Manager</option>
+												<option>Project Manager</option>
+												<option>Product Designer</option>
+												<option>Graphic Designer</option>
+											</select>
+										</div>
+										<div class="form-row mt-3">
+											<label for="inputState">Klas:</label>
+											<select id="inputState" class="form-control">
+												<option selected>1e middelbaar</option>
+												<option>2de middelbaar</option>
+												<option>3de middelbaar</option>
+												<option>4de middelbaar</option>
+												<option>5de middelbaar</option>
+												<option>6de middelbaar</option>
+											</select>
+										</div>
+										<div class="form-row mt-3">
+											<div class="col pl-0">
+												<label class="mb-1">Geboortedatum:</label>
+												<input id="datum" type="date" value="2019-01-11" required>
+											</div>
+										</div>
+										<div class="form-row mt-3">
+											<label for="inputAddress">Adres:</label>
+											<input type="text" class="form-control" id="inputAddress" placeholder="Straat/nr" required>
+										</div>
+										<div class="form-row mt-3">
+											<div class="col pl-0">
+												<label for="inputPostcode">Postcode:</label>
+												<input type="text" class="form-control" id="inputPostcode" placeholder="Postcode" required>
+											</div>
+											<div class="col">
+												<label for="inputStad">Stad:</label>
+												<input type="text" class="form-control" id="inputStad" placeholder="Stad" required>
+											</div>
+										</div>
+										<div class="form-row mt-3">
+											<label for="inputEmail4">Email</label>
+											<input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+										</div>
+										<div class="form-row mt-3">
+											<div class="col pl-0">
+												<label for="inputState">Telefoon:</label>
+												<input type="tel" class="form-control" placeholder="Telefoon" required>
+											</div>
+										</div>
+										<div class="form-row mt-3">
+											<div class="col pl-0">
+												<p>Opmerkingen:</p>
+												<textarea name="opmerking" id="opmerking" class="w-100" rows="3"></textarea>
+											</div>
+										</div>
+										<div class="d-flex justify-content-center">
+											<button type="submit" class="btn btn-secondary mt-3 mr-2"><i class="fas fa-plus"></i> Toevoegen</button>
+											<input type="reset" class="btn btn-secondary s4_resetbutton mt-3">
+										</div>
+									
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<form action="" class="mt-1 s4_usersearch d-flex">
+						<span class="s4_sorttitel">Sort: </span>
+						<select class="form-control ml-3">
+							<option><span>Active first</span></option>
+							<option>Active first</option>
+							<option>Active first</option>
+							<option>Active first</option>
+						
+						</select>
+					</form>
+				</section>
+				<section>
+					<div class="col-12 pb-3">
+						<div class="row">
+							<div class="col-6 col-md-3">
+								<p class="m-0 text-secondary">Name</p>
+							</div>
+							<div class="col-6 col-md-2">
+								<p class="m-0 text-secondary">Last activity</p>
+							</div>
+							<div class="d-none d-md-inline col-md-3">
+								<p class="m-0 text-secondary">Mail</p>
+							
+							</div>
+							<div class="d-none d-md-inline col-md-3">
+								<p class="m-0 text-secondary">Phone</p>
+							</div>
+						</div>
+					</div>
+					<div class="accordion" id="s4_userlist">
+						<div class="card border-0">
+							<div class="card-header py-0 bg-white" id="headingOne">
+								<div class="row">
+									<div class="col-6 col-md-3 p-3 d-flex align-items-center border s4_border_kleur position-relative">
+										<div class="d-none d-md-inline-block s4_foto_cirkel rounded-circle mx-4">
+											<img class="s4_foto" style="height: 100%; width: auto;" src="assets/images/John_Doe.jpg" alt="John Doe">
+										</div>
+										<div class="d-none d-md-block s4_online_bol1"></div>
+										<div class="d-none d-md-block s4_online_bol2"></div>
+										<div class="d-inline-block pl-2 pl-sm-5 pl-md-0">
+											<p class="m-0 font-weight-bold">John Doe</p>
+											<p class="m-0 font-weight-light">CEO</p>
+										</div>
+									</div>
+									<div class="col-4 col-md-2 pl-2 pl-sm-4 d-flex align-items-center border s4_border_kleur border-left-0 s4_online">
+										<i class="d-inline far fa-clock mr-2"></i>
+										<p class="d-inline m-0">Online now!</p>
+									</div>
+									<div class="d-none d-md-flex col-md-3 align-items-center border s4_border_kleur border-left-0 border-right-0">
+										<p class="m-0 font-weight-bold">johndoe@design.com</p>
+									</div>
+									<div class="d-none d-md-flex col-md-3 align-items-center border s4_border_kleur border-left-0">
+										<p class="m-0 font-weight-bold">(000) 111 222 333</p>
+									</div>
+									<button class="col-2 col-md-1 btn btn-link border s4_border_kleur border-left-0 rounded-0" type="button"
+									        data-toggle="collapse" data-target="#collapseOne"
+									        aria-expanded="true" aria-controls="collapseOne">
+										<i class="text-dark fas fa-ellipsis-v text-secondary"></i>
+									</button>
+								</div>
+							</div>
+							<div id="collapseOne" class="collapse bg-light" aria-labelledby="headingOne" data-parent="#s4_userlist">
+								<div class="card-body py-0">
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">event toevoegen</a>
+									</p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">bericht
+										versturen</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">gegevens</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">persoon
+										bewerken</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">persoon
+										verwijderen</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-header py-0 bg-white" id="headingTwo">
+								<div class="row">
+									<div class="col-6 col-md-3 p-3 d-flex align-items-center border s4_border_kleur border-top-0 position-relative">
+										<div class="d-none d-md-inline-block s4_foto_cirkel rounded-circle mx-4">
+											<img class="s4_foto" style="height: 100%; width: auto;" src="assets/images/Nina.jpg" alt="John Doe">
+										</div>
+										<div class="d-none d-md-block s4_online_bol1"></div>
+										<div class="d-none d-md-block s4_online_bol2"></div>
+										<div class="d-inline-block pl-2 pl-sm-5 pl-md-0">
+											<p class="m-0 font-weight-bold">Nina Jones</p>
+											<p class="m-0 font-weight-light">UW Designer</p>
+										</div>
+									</div>
+									<div class="col-4 col-md-2 pl-2 pl-sm-4 d-flex align-items-center border s4_border_kleur border-top-0 border-left-0 s4_online">
+										<i class="d-inline far fa-clock mr-2"></i>
+										<p class="d-inline m-0">Online now!</p>
+									</div>
+									<div class="d-none d-md-flex col-md-3 align-items-center border s4_border_kleur border-top-0 border-left-0 border-right-0">
+										<p class="m-0 font-weight-bold">ninajones@design.com</p>
+									</div>
+									<div class="d-none d-md-flex col-md-3 align-items-center border s4_border_kleur border-top-0 border-left-0">
+										<p class="m-0 font-weight-bold">(000) 111 222 333</p>
+									</div>
+									<button class="col-2 col-md-1 btn btn-link border s4_border_kleur border-left-0 border-top-0 rounded-0" type="button"
+									        data-toggle="collapse" data-target="#collapseOne"
+									        aria-expanded="true" aria-controls="collapseOne">
+										<i class="text-dark fas fa-ellipsis-v text-secondary"></i>
+									</button>
+								</div>
+							</div>
+							<div id="collapseTwo" class="collapse bg-light" aria-labelledby="headingTwo" data-parent="#s4_userlist">
+								<div class="card-body py-0">
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">event toevoegen</a>
+									</p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">bericht
+										versturen</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">gegevens</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">persoon
+										bewerken</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">persoon
+										verwijderen</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-header py-0 bg-white" id="headingThree">
+								<div class="row">
+									<div class="col-6 col-md-3 p-3 d-flex align-items-center border s4_border_kleur border-top-0 position-relative">
+										<div class="d-none d-md-inline-block s4_foto_cirkel rounded-circle mx-4">
+											<img class="s4_foto" style="height: auto; width: 100%;" src="assets/images/Alex.jpg" alt="John Doe">
+										</div>
+										<div class="d-none d-md-block s4_online_bol1"></div>
+										<div class="d-none d-md-block s4_online_bol2"></div>
+										<div class="d-inline-block pl-2 pl-sm-5 pl-md-0">
+											<p class="m-0 font-weight-bold">Alex Smith</p>
+											<p class="m-0 font-weight-light">Web Designer</p>
+										</div>
+									</div>
+									<div class="col-4 col-md-2 pl-2 pl-sm-4 d-flex align-items-center border s4_border_kleur border-top-0 border-left-0 s4_online">
+										<i class="d-inline far fa-clock mr-2"></i>
+										<p class="d-inline m-0">Online now!</p>
+									</div>
+									<div class="d-none d-md-flex col-md-3 align-items-center border s4_border_kleur border-top-0 border-left-0 border-right-0">
+										<p class="m-0 font-weight-bold">alexsmith@design.com</p>
+									</div>
+									<div class="d-none d-md-flex col-md-3 align-items-center border s4_border_kleur border-top-0 border-left-0">
+										<p class="m-0 font-weight-bold">(000) 111 222 333</p>
+									</div>
+									<button class="col-2 col-md-1 btn btn-link border s4_border_kleur border-left-0 border-top-0 rounded-0" type="button"
+									        data-toggle="collapse" data-target="#collapseOne"
+									        aria-expanded="true" aria-controls="collapseOne">
+										<i class="text-dark fas fa-ellipsis-v text-secondary"></i>
+									</button>
+								</div>
+							</div>
+							<div id="collapseThree" class="collapse bg-light" aria-labelledby="headingThree" data-parent="#s4_userlist">
+								<div class="card-body py-0">
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">event toevoegen</a>
+									</p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">bericht
+										versturen</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">gegevens</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">persoon
+										bewerken</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">persoon
+										verwijderen</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-header py-0 bg-white" id="headingFour">
+								<div class="row">
+									<div class="col-6 col-md-3 p-3 d-flex align-items-center border s4_border_kleur border-top-0 position-relative">
+										<div class="d-none d-md-inline-block s4_foto_cirkel rounded-circle mx-4">
+											<img class="s4_foto" style="height: auto; width: 100%;" src="assets/images/Ann.jpg" alt="John Doe">
+										</div>
+										<div class="d-inline-block pl-2 pl-sm-5 pl-md-0">
+											<p class="m-0 font-weight-bold">Ann Clooney</p>
+											<p class="m-0 font-weight-light">Account Manager</p>
+										</div>
+									</div>
+									<div class="col-4 col-md-2 pl-2 pl-sm-4 d-flex align-items-center border s4_border_kleur border-top-0 border-left-0">
+										<i class="d-inline far fa-clock mr-2 text-secondary"></i>
+										<p class="d-inline m-0 text-secondary">20 minutes ago</p>
+									</div>
+									<div class="d-none d-md-flex col-md-3 align-items-center border s4_border_kleur border-top-0 border-left-0 border-right-0">
+										<p class="m-0 font-weight-bold">annclooney@design.com</p>
+									</div>
+									<div class="d-none d-md-flex col-md-3 align-items-center border s4_border_kleur border-top-0 border-left-0">
+										<p class="m-0 font-weight-bold">(000) 111 222 333</p>
+									</div>
+									<button class="col-2 col-md-1 btn btn-link border s4_border_kleur border-left-0 border-top-0 rounded-0" type="button"
+									        data-toggle="collapse" data-target="#collapseOne"
+									        aria-expanded="true" aria-controls="collapseOne">
+										<i class="text-dark fas fa-ellipsis-v text-secondary"></i>
+									</button>
+								</div>
+							</div>
+							<div id="collapseFour" class="collapse bg-light" aria-labelledby="headingFour" data-parent="#s4_userlist">
+								<div class="card-body py-0">
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">event toevoegen</a>
+									</p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">bericht
+										versturen</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">gegevens</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">persoon
+										bewerken</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">persoon
+										verwijderen</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-header py-0 bg-white" id="headingFive">
+								<div class="row">
+									<div class="col-6 col-md-3 p-3 d-flex align-items-center border s4_border_kleur border-top-0 position-relative">
+										<div class="d-none d-md-inline-block s4_foto_cirkel rounded-circle mx-4">
+											<img class="s4_foto" style="height: 100%; width: auto;" src="assets/images/Patric.jpg" alt="John Doe">
+										</div>
+										<div class="d-inline-block pl-2 pl-sm-5 pl-md-0">
+											<p class="m-0 font-weight-bold">Patric Smith</p>
+											<p class="m-0 font-weight-light">Project Manager</p>
+										</div>
+									</div>
+									<div class="col-4 col-md-2 pl-2 pl-sm-4 d-flex align-items-center border s4_border_kleur border-top-0 border-left-0">
+										<i class="d-inline far fa-clock mr-2 text-secondary"></i>
+										<p class="d-inline m-0 text-secondary">40 minutes ago</p>
+									</div>
+									<div class="d-none d-md-flex col-md-3 align-items-center border s4_border_kleur border-top-0 border-left-0 border-right-0">
+										<p class="m-0 font-weight-bold">patricmanager@design.com</p>
+									</div>
+									<div class="d-none d-md-flex col-md-3 align-items-center border s4_border_kleur border-top-0 border-left-0">
+										<p class="m-0 font-weight-bold">(000) 111 222 333</p>
+									</div>
+									<button class="col-2 col-md-1 btn btn-link border s4_border_kleur border-left-0 border-top-0 rounded-0" type="button"
+									        data-toggle="collapse" data-target="#collapseOne"
+									        aria-expanded="true" aria-controls="collapseOne">
+										<i class="text-dark fas fa-ellipsis-v text-secondary"></i>
+									</button>
+								</div>
+							</div>
+							<div id="collapseFive" class="collapse bg-light" aria-labelledby="headingFive" data-parent="#s4_userlist">
+								<div class="card-body py-0">
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">event toevoegen</a>
+									</p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">bericht
+										versturen</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">gegevens</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">persoon
+										bewerken</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">persoon
+										verwijderen</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-header py-0 bg-white" id="headingSix">
+								<div class="row">
+									<div class="col-6 col-md-3 p-3 d-flex align-items-center border s4_border_kleur border-top-0 position-relative">
+										<div class="d-none d-md-inline-block s4_foto_cirkel rounded-circle mx-4">
+											<img class="s4_foto" style="height: auto; width: 100%;" src="assets/images/nicky.jpg" alt="John Doe">
+										</div>
+										<div class="d-inline-block pl-2 pl-sm-5 pl-md-0">
+											<p class="m-0 font-weight-bold">Nicky Hunt</p>
+											<p class="m-0 font-weight-light">Product Designer</p>
+										</div>
+									</div>
+									<div class="col-4 col-md-2 pl-2 pl-sm-4 d-flex align-items-center border s4_border_kleur border-top-0 border-left-0">
+										<i class="d-inline far fa-clock mr-2 text-secondary"></i>
+										<p class="d-inline m-0 text-secondary">1 hour ago</p>
+									</div>
+									<div class="d-none d-md-flex col-md-3 align-items-center border s4_border_kleur border-top-0 border-left-0 border-right-0">
+										<p class="m-0 font-weight-bold">nickyhunt@design.com</p>
+									</div>
+									<div class="d-none d-md-flex col-md-3 align-items-center border s4_border_kleur border-top-0 border-left-0">
+										<p class="m-0 font-weight-bold">(000) 111 222 333</p>
+									</div>
+									<button class="col-2 col-md-1 btn btn-link border s4_border_kleur border-left-0 border-top-0 rounded-0" type="button"
+									        data-toggle="collapse" data-target="#collapseOne"
+									        aria-expanded="true" aria-controls="collapseOne">
+										<i class="text-dark fas fa-ellipsis-v text-secondary"></i>
+									</button>
+								</div>
+							</div>
+							<div id="collapseSix" class="collapse bg-light" aria-labelledby="headingSix" data-parent="#s4_userlist">
+								<div class="card-body py-0">
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">event toevoegen</a>
+									</p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">bericht
+										versturen</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">gegevens</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">persoon
+										bewerken</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">persoon
+										verwijderen</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="card border-0">
+							<div class="card-header py-0 bg-white" id="headingSeven">
+								<div class="row">
+									<div class="col-6 col-md-3 p-3 d-flex align-items-center border s4_border_kleur border-top-0 position-relative">
+										<div class="d-none d-md-inline-block s4_foto_cirkel rounded-circle mx-4">
+											<img class="s4_foto" style="height: 100%; width: auto;" src="assets/images/jane.jpg" alt="John Doe">
+										</div>
+										<div class="d-inline-block pl-2 pl-sm-5 pl-md-0">
+											<p class="m-0 font-weight-bold">Jane Doe</p>
+											<p class="m-0 font-weight-light">Graphic Designer</p>
+										</div>
+									</div>
+									<div class="col-4 col-md-2 pl-2 pl-sm-4 d-flex align-items-center border s4_border_kleur border-top-0 border-left-0">
+										<i class="d-inline far fa-clock mr-2 text-secondary"></i>
+										<p class="d-inline m-0 text-secondary">2 hours ago</p>
+									</div>
+									<div class="d-none d-md-flex col-md-3 align-items-center border s4_border_kleur border-top-0 border-left-0 border-right-0">
+										<p class="m-0 font-weight-bold">janedoe@design.com</p>
+									</div>
+									<div class="d-none d-md-flex col-md-3 align-items-center border s4_border_kleur border-top-0 border-left-0">
+										<p class="m-0 font-weight-bold">(000) 111 222 333</p>
+									</div>
+									<button class="col-2 col-md-1 btn btn-link border s4_border_kleur border-left-0 border-top-0 rounded-0" type="button"
+									        data-toggle="collapse" data-target="#collapseOne"
+									        aria-expanded="true" aria-controls="collapseOne">
+										<i class="text-dark fas fa-ellipsis-v text-secondary"></i>
+									</button>
+								</div>
+							</div>
+							<div id="collapseSeven" class="collapse bg-light" aria-labelledby="headingSeven" data-parent="#s4_userlist">
+								<div class="card-body py-0">
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">event toevoegen</a>
+									</p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">bericht
+										versturen</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">gegevens</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">persoon
+										bewerken</a></p>
+									<p class="s4_achtergrond_link m-0 py-2"><a
+											class="s4_no_style text-center text-uppercase text-dark d-block" href="">persoon
+										verwijderen</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<nav class="d-flex justify-content-center align-items-center my-4" aria-label="pagination">
+						<ul class="pagination">
+							<li class="page-item"><a class="d-none page-link text-dark" href="#">Previous</a></li>
+							<li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+							<li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+							<li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+							<li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
+						</ul>
+					</nav>
+				</section>
+			</main>
+			<footer>
+			
+			</footer>
+		</div>
+	
+	</div>
+</div>
+
+
+
+<!--jquery-->
+<script src="assets/js/jquery.min.js"></script>
+<!--popper.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<!--bootstrap.min.js-->
+<script src="bootstrap-4.1.3/js/bootstrap.min.js"></script>
+<!--moment.js-->
+<script src="https://cdn.jsdelivr.net/npm/moment@2.23.0/moment.min.js"></script>
+<!--Full Calendar-->
+<script src="assets/js/fullcalendar.min.js"></script>
+<!--scripts-->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+body{
+    background-image: url("../images/home_background_image.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.s3-content-wrap{
+    transform: translate(-50%);
+    top: 50%;
+    left: 50%;
+}
+.s3-bg-darkblue{
+    background-color:#0e1a35;
+}
+.s3-rounded-button{
+    border-radius: 25px!important;
+}
+.s3-login-form{
+    display: block;
+}
+.s3-register-form{
+    display: none;
+}
+.s3-focus-off:focus{
+    box-shadow: none;
+}
+.s3-tooltip-text{
+    display: none;
+    right: 7%;
+}
+.s3-lang-select{
+    width: 7%;
+    background:none;
+    margin-top: 1%;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*----------MEDIA QUERIES----------*/
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .s3-tooltip-text{
+        display:none !important;
+    }
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+

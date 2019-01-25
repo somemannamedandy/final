@@ -1,0 +1,266 @@
+/*task artivles*/
+.custom-select{
+    box-shadow: none !important;
+}
+
+
+.s1_profile_pic{
+    width: 3rem;
+    height: 3rem;
+}
+.s1_profile_pic p{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.s1_bg_task{
+    background-color: white;
+}
+.s1_optiemenu {
+    background: none;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.s1_task_tekst h3{
+    font-size: 1.1rem;
+}
+
+
+.s1_badge_tekst{
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+}
+//.badge1{
+  //  font-size: 30px;
+  //  margin-right: 5px;
+  //  padding: 12px;
+  //
+  //}
+//.badge2{
+  //  font-size: 30px;
+  //  padding: 12px;
+  //
+  //}
+
+
+#s1_messages h3 {
+    font-size: 14px;
+}
+
+#s1_messages h3 span {
+    color: lightgray;
+    font-weight: lighter;
+}
+#s1_messages .maxbreedte {
+    max-width: 75%;
+}
+
+
+
+
+
+.s4_resetbutton{
+    height: 40px;
+}
+
+.s4_h1title {
+    color: #0e1a35;
+}
+.s4_h1title span{
+    color:#a0abc2;
+}
+
+
+.s4_adduser {
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-color: #a0abc2;
+}
+.s4_adduser:hover{
+     background-color: #0e1a35;
+ }
+.s4_adduser i{
+    color: #fff;
+}
+
+
+
+
+
+.s4_usersearch .s4_sorttitel{
+    margin-top: 7px;
+    color: #a0abc2;
+}
+.s4_usersearch select {
+    background-color: #f6f7fa;
+    padding: 0 30px;
+    border-radius: 20px;
+    color: #0e1a35;
+    font-weight: bold;
+}
+.s4_usersearch option{
+    color: #0e1a35;
+
+
+}
+
+
+.s4_foto_cirkel {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.s4_foto {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index:2;
+}
+
+.s4_no_style:hover, .s4_no_style:active {
+    text-decoration: none;
+}
+
+.s4_achtergrond_link:hover {
+    background-color: #bebebe;
+}
+
+.s4_online p, .s4_online i{
+    font-weight: bold;
+    color:#80e58f;
+}
+.s4_online_bol1{
+    width:10px;
+    height:10px;
+    left:80px;
+    top:28%;
+    border-radius:50%;
+    background: #80e58f;
+    position:absolute;
+    z-index:4;
+}
+.s4_online_bol2{
+    width:16px;
+    height:16px;
+    left:78px;
+    top:23%;
+    border-radius:50%;
+    background: #fff;
+    position:absolute;
+    z-index:3;
+}
+
+.s4_border_kleur{
+    border-color:#fefefe;
+}
+
+
+.s3-text-darkblue{
+    color: #0e1a35 !important;
+}
+.s3-background-darkblue{
+    background-color:  #0e1a35 !important;
+}
+.s3-text-lightblue{
+    color: #5584ff;
+}
+.s3-sidemenu-item:hover{
+    border-left: 9px solid #5584ff;
+    border-right: 1px solid #0e1a35;
+    background-color: #122143!important;
+}
+.s3-list-style-none{
+    list-style: none;
+}
+.s3-side-bar{
+
+    height: 100vh
+}
+.s3-text-deco-none{
+    text-decoration: none!important;
+}
+.s3-message-count{
+    top: 27%;
+    left: 50%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+.s3-message-count p{
+    font-size: 0.7rem;
+    padding-bottom: 2px;
+}
+.s3-notification-count{
+    top: 27%;
+    left: 50%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+.s3-notification-count p{
+    font-size: 0.7rem;
+    padding-bottom: 2px;
+}
+.s3-sidemenu-wrap{
+    display:none;
+}
+#s3-toggle-collapse-small{
+    list-style:none;
+}
+#hamburgerMenuDropdownsm::after{
+    display: none;
+}
+/*----------MEDIA QUERIES----------*/
+
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
+
+
+.addplus {
+    display: none;
+}
+
+.fc-day-top:hover .addplus {
+    display: block !important;
+}
+
+.fc-row .fc-content-skeleton {
+    padding-bottom: 0px;
+}
+
+.fc-content-skeleton,
+table {
+    height: 100%;
+}
+
+#s2_afspraak_agenda {
+    padding: 3px 7px;
+    border-radius: 20px;
+}
+
+.modal.editing .no-edit {
+    display: none;
+}
+
+.modal:not(.editing) .on-edit {
+    display: none;
+}

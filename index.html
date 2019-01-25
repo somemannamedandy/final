@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="bootstrap template">  <!--Description for search engine-->
+    <meta name="keywords" content="HTML,CSS,SCSS,JavaScript,Bootstrap"> <!--keywords for search engine-->
+    <meta name="author" content="Andy Basyn">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!--Scale viewport "shrink-to-fit"default yes => can zoom on mobile if no,you can no longer zoom-->
+    <link rel="icon" href="#" type="image/gif" sizes="16x16">
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="bootstrap-4.1.3/css/bootstrap.min.css">
+    <!--Full Calendar-->
+    <link rel="stylesheet" href="assets/css/fullcalendar.min.css">
+    <!--style.css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!--inulr-->
+    <title>mijn account</title>
+</head>
+<body class="container-fluid p-0">
+<div class="col-12">
+    <div class="row">
+        <div class="s3-sidemenu-wrap col-lg-3 p-0">
+            <!--side bar start-->
+            <aside class="s3-side-bar s3-background-darkblue" style="height: 100vh;">
+
+
+                <ul class="list-group list-group-flush pt-lg-5">
+                    <li class="s3-list-style-none list-group-item s3-background-darkblue s3-sidemenu-item">
+                        <a href="index.html"
+                           class="text-white text-capitalize s3-text-deco-none d-block text-center s3-text-deco-none"><span><i class="fas fa-calendar-alt s3-text-lightblue"></i></span> calendar</a>
+                    </li>
+                    <li class="s3-list-style-none list-group-item s3-background-darkblue s3-sidemenu-item">
+                        <a href="users.html" class="text-white text-capitalize s3-text-deco-none d-block text-center s3-text-deco-none"><span><i class="far fa-user s3-text-lightblue"></i></span> users</a>
+                    </li>
+                </ul>
+            </aside>
+            <!--side bar stop-->
+        </div>
+        <div class="col-12 s3-content-wrap">
+            <header>
+                <!--start nav-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+
+                    <div class="row w-100">
+                        <!--nav small start-->
+                        <div class="col-12 d-block d-lg-none">
+                            <li class="nav-item dropdown ml-lg-auto mx-auto mx-lg-0" id="s3-toggle-collapse-small">
+                                <a class="nav-link d-block text-center" role="button"  aria-haspopup="true" aria-expanded="false" data-toggle="collapse" href="#s3-collapse-small" aria-controls="s3-collapse-small">
+                                    <span><img src="assets/images/profilepic.png" alt="profile" class="img-fluid ml-auto mx-auto"></span>
+                                </a>
+                                <div class="d-flex justify-content-center">
+                                    <a href="search.html" class="nav-link"><i class="s3-text-darkblue fas fa-search"></i></a>
+                                    <a class="nav-link" href="#messages"><i class="s3-text-darkblue fas fa-envelope"></i></a>
+                                    <a class="nav-link" href="#meldingen"><i class="s3-text-darkblue fas fa-bell"></i></a>
+                                    <a class="nav-link dropdown-toggle " href="#" id="hamburgerMenuDropdownsm" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-bars s3-text-darkblue"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="hamburgerMenuDropdownsm">
+                                        <a href="index.html"
+                                           class="text-dark text-capitalize s3-text-deco-none d-block text-center s3-text-deco-none"><span><i class="fas fa-calendar-alt s3-text-lightblue"></i></span> calendar</a>
+                                        <a href="users.html" class="text-dark text-capitalize s3-text-deco-none d-block text-center s3-text-deco-none"><span><i class="far fa-user s3-text-lightblue"></i></span> users</a>
+                                    </div>
+
+                                </div>
+                                <div class="collapse dropdown-menu-right" id="s3-collapse-small">
+
+                                    <!--add additional options here (below the divider)-->
+                                    <!--<a class="dropdown-item text-capitalize text-dark" href="settings.html">ADDITIONAL OPTION</a>-->
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item text-capitalize text-dark text-center" href="settings.html">settings</a>
+                                    <a class="dropdown-item text-capitalize text-dark text-center" href="login.html">log out</a>
+                                </div>
+                            </li>
+                        </div>
+                        <!--nav small end-->
+
+                        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>-->
+
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav w-100">
+                                <!--side bar collapse toggle-->
+                                <li class="nav-item  pt-3 d-none d-lg-block">
+                                    <a class="nav-link s3-toggleSideMenu" href="#"><i class="fas fa-bars scr3-text-darkblue"></i></a>
+                                </li>
+                                <!--search link-->
+                                <li class="nav-item pt-3  mx-auto mx-lg-0 d-flex flex-lg-grow-1">
+                                    <a href="search.html" class="nav-link"><i class="s3-text-darkblue fas fa-search"></i></a>
+                                </li>
+                                <!--view messages-->
+                                <li class="nav-item pt-3 ml-lg-auto mx-auto mx-lg-0 position-relative">
+                                    <a class="nav-link" href="#messages"><i class="s3-text-darkblue fas fa-envelope"></i></a>
+                                    <!--counter-->
+                                    <div class="s3-message-count position-absolute bg-primary border border-white"><p class="text-white text-center">1</p></div>
+                                </li>
+                                <!--view notifications-->
+                                <li class="nav-item pt-3 ml-lg-auto mx-auto mx-lg-0 position-relative">
+                                    <a class="nav-link" href="#meldingen"><i class="s3-text-darkblue fas fa-bell"></i></a>
+                                    <!--counter-->
+                                    <div class="s3-notification-count position-absolute bg-primary border border-white"><p class="text-white text-center">1</p></div>
+                                </li>
+
+                                <!--profile dropdown start-->
+                                <li class="nav-item dropdown ml-lg-auto mx-auto mx-lg-0">
+                                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span><img src="assets/images/profilepic.png" alt="profile" class="img-fluid ml-auto"></span>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item text-capitalize text-dark" href="settings.html">settings</a>
+                                        <!--add additional options here (above the divider)-->
+                                        <!--<a class="dropdown-item text-capitalize text-dark" href="settings.html">ADDITIONAL OPTION</a>-->
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item text-capitalize text-dark" href="login.html">log out</a>
+                                    </div>
+                                </li>
+                                <!--profile dropdown end-->
+                                <li class="nav-item dropdown ml-lg-auto mx-auto mx-lg-0 d-block d-lg-none">
+                                    <a class="nav-link dropdown-toggle " href="#" id="hamburgerMenuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-bars s3-text-darkblue"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="hamburgerMenuDropdown d-none d-md-block">
+                                        <a href="index.html"
+                                           class="text-dark text-capitalize s3-text-deco-none d-block text-center s3-text-deco-none"><span><i class="fas fa-calendar-alt s3-text-lightblue"></i></span> calendar</a>
+                                        <a href="users.html" class="text-dark text-capitalize s3-text-deco-none d-block text-center s3-text-deco-none"><span><i class="far fa-user s3-text-lightblue"></i></span> users</a>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </nav>
+                <!--end nav-->
+            </header>
+            <main>
+                <section id="s2_calendar" class="mt-4">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-2 my-auto mx-auto pb-3 pb-lg-0">
+                                <h1 class="text-center">Filters</h1>
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn bg-white d-flex mx-auto " data-toggle="modal"
+                                        data-target="#exampleModal">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fas fa-plus-circle fa-stack-1x fa-2x text-primary"></i>
+                                    </span>
+                                </button>
+                                <!--Buttons filter -->
+                                <button type="button" class="btn btn-primary btn-lg btn-block">Persoonlijk</button>
+                                <button type="button" class="btn btn-secondary btn-lg btn-block">Klassikaal</button>
+                                <button type="button" class="btn btn-secondary btn-lg btn-block">Algemeen</button>
+                                <button type="button" class="btn btn-secondary btn-lg btn-block">Personeel</button>
+                                
+                            </div>
+                            <div class="col-lg-10">
+                                <div class="col-12 text-center">
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">Toevoegen aan agenda</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <form>
+                                                                <label for="s2_form_onderwerp">Onderwerp:</label>
+                                                                <input type="text" class="form-control mb-3" id="s2_form_onderwerp" placeholder="Vul het onderwerp in">
+                                                                <div class="row">
+                                                                    <div class="col-12 col-sm-6">
+                                                                        <label for="s2_form_date_start">Begin:</label>
+                                                                        <input type="datetime-local" class="form-control mb-3" id="s2_form_date_start">
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6">
+                                                                        <label for="s2_form_date_end">Einde:</label>
+                                                                        <input type="datetime-local" class="form-control mb-3" id="s2_form_date_end">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-8">
+                                                                        <label for="s2_form_agenda">Welke agenda?</label>
+                                                                        <select class="custom-select custom-select-md mb-3" id="s2_form_agenda">
+                                                                            <option selected>Agenda</option>
+                                                                            <option value="1">Persoonlijk</option>
+                                                                            <option value="2">Klassikaal</option>
+                                                                            <option value="3">Algemeen</option>
+                                                                            <option value="4">Personeel</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-4 d-flex flex-column">
+                                                                        <label for="s2_form_kleur" class="pl-sm-2 mr-5 mr-sm-0">Kleurtje?</label>
+                                                                        <select class="custom-select custom-select-md mb-3 w-50 ml-sm-5" id="s2_form_kleur">
+                                                                            <option value="0" selected>Kleur</option>
+                                                                            <option value="1" style="background: red; color:red">rood</option>
+                                                                            <option value="2" style="background: blue; color:blue;">blauw</option>
+                                                                            <option value="3" style="background: yellow; color:yellow">geel</option>
+                                                                            <option value="4" style="background: green; color:green">groen</option>
+                                                                            <option value="5" style="background: purple; color:purple">paars</option>
+                                                                            <option value="6" style="background: pink; color:pink">roze</option>
+                                                                            <option value="7" style="background: brown; color:brown">bruin</option>
+                                                                            <option value="8" style="background: black; color: black">zwart</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <label for="s2_form_plaats">Plaats:</label>
+                                                                <input type="text" class="form-control mb-3" id="s2_form_plaats" placeholder="Geef een plaats in">
+                                                                <label for="s2_form_message">Bericht:</label>
+                                                                <textarea class="form-control" id="s2_form_message" rows="4" placeholder="Extra info"></textarea>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
+                                                    <button type="button" class="btn btn-primary">Opslaan</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal fade" id="s2_afspraakModal" tabindex="-1" role="dialog" aria-labelledby="afspraakModalLabel" aria-hidden="true">
+                                        <form>
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content text-left">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title no-edit" id="s2_afspraak_titel"></h5>
+                                                        <input type="text" class="form-control on-edit" id="s2_afspraak_titel_edit">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body no-edit">
+                                                        <div>
+                                                            <p class="font-weight-bold mb-0">Gemaakt door</p>
+                                                            <p id="s2_afspraak_creator"></p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="font-weight-bold mb-0">Datum</p>
+                                                            <p id="s2_afspraak_datum"></p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="font-weight-bold mb-0">Agenda</p>
+                                                            <p><span id="s2_afspraak_agenda">Persoonlijk</span></p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="font-weight-bold mb-0">Locatie</p>
+                                                            <p id="s2_afspraak_locatie"></p>
+                                                        </div>
+                                                        <div>
+                                                            <p class="font-weight-bold mb-0">Verdere info</p>
+                                                            <p id="s2_afspraak_info"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-body on-edit">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <div class="row">
+                                                                    <div class="col-12 col-sm-6">
+                                                                        <label for="s2_afspraak_datum_start_edit">Begin:</label>
+                                                                        <input type="datetime-local" class="form-control mb-3" id="s2_afspraak_datum_start_edit">
+                                                                    </div>
+                                                                    <div class="col-12 col-sm-6">
+                                                                        <label for="s2_afspraak_datum_end_edit">Einde:</label>
+                                                                        <input type="datetime-local" class="form-control mb-3" id="s2_afspraak_datum_end_edit">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-8">
+                                                                        <label for="s2_afspraak_agenda_edit">Welke agenda?</label>
+                                                                        <select class="custom-select custom-select-md mb-3" id="s2_afspraak_agenda_edit">
+                                                                            <option selected>Agenda</option>
+                                                                            <option value="Persoonlijk">Persoonlijk</option>
+                                                                            <option value="2">Klassikaal</option>
+                                                                            <option value="Algemeen">Algemeen</option>
+                                                                            <option value="4">Personeel</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-4 d-flex flex-column">
+                                                                        <label for="s2_afspraak_agenda_kleur_edit" class="pl-sm-2 mr-5 mr-sm-0">Kleurtje?</label>
+                                                                        <select class="custom-select custom-select-md mb-3 w-50 ml-sm-5" id="s2_afspraak_agenda_kleur_edit">
+                                                                            <option value="0" selected>Kleur</option>
+                                                                            <option value="red" style="background: red; color:red">rood</option>
+                                                                            <option value="2" style="background: blue; color:blue;">blauw</option>
+                                                                            <option value="3" style="background: yellow; color:yellow">geel</option>
+                                                                            <option value="green" style="background: green; color:green">groen</option>
+                                                                            <option value="5" style="background: purple; color:purple">paars</option>
+                                                                            <option value="6" style="background: pink; color:pink">roze</option>
+                                                                            <option value="7" style="background: brown; color:brown">bruin</option>
+                                                                            <option value="8" style="background: black; color: black">zwart</option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <label for="s2_afspraak_locatie_edit">Plaats:</label>
+                                                                <input type="text" class="form-control mb-3" id="s2_afspraak_locatie_edit" placeholder="Geef een plaats in">
+                                                                <label for="s2_afspraak_info_edit">Bericht:</label>
+                                                                <textarea class="form-control" id="s2_afspraak_info_edit" rows="4" placeholder="Extra info"></textarea>
+                                            
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-primary no-edit" id="afspraak_aanpassen">Aanpassen</button>
+                                                        <button type="submit" class="btn btn-primary on-edit">Opslaan</button>
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluiten</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div id="s2_cal"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+	
+	            <section class="row mt-5">
+		            <div class="col-lg-10 offset-lg-2">
+			            <div class="row">
+				            <!--Hier begint Task-->
+				            <div class="col-lg-4 s1_bg_task">
+					            <ul class="list-group">
+						            <li class="list-group-item">
+							            <header class="row">
+								            <div class="col-12 d-flex">
+									            <h2>Tasks</h2>
+									            <div class="mt-1 ml-3 mr-3">
+										            <select id="s1_options" class="py-1 mr-3 custom-select">
+											            <option value="s1_persoonlijk">Persoonlijk</option>
+											            <option value="s1_shared">Shared</option>
+											            <option value="s1_algemeen">Algemeen</option>
+										            </select>
+									            </div>
+									            <div class="ml-5">
+										            <div class="rounded-circle badge badge-primary position-relative p-4">
+											            <p class="s1_badge_tekst">2</p>
+										            </div>
+										            <div class="badge badge-danger rounded-circle position-relative p-4">
+											            <p class="s1_badge_tekst">4</p>
+										            </div>
+									            </div>
+								            </div>
+							            </header>
+						            </li>
+						            <div id="s1_persoonlijk" class="s1_task_content">
+							
+							            <li class="list-group-item d-flex">
+								            <div class="rounded-circle bg-primary s1_profile_pic position-relative align-self-center  mr-1">
+									            <p class="text-white">N</p>
+								            </div>
+								
+								            <div class="s1_task_tekst mt-3 ml-4">
+									            <h3>New website for Smartschool</h3>
+									            <p class="text-danger"><i class="far fa-clock mr-2"></i>5 days delays</p>
+								            </div>
+								            <div class="dropdown my-auto ml-5">
+									            <button class="btn s1_optiemenu" type="button" id="dropdownMenuButton1"
+									                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										            <i class="fas fa-ellipsis-v fa-2x" style="color: #8492af;"></i>
+									            </button>
+									            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+										            <a class="dropdown-item" href="#">Wijzigen</a>
+										            <a class="dropdown-item" href="#">Messages</a>
+										            <a class="dropdown-item" href="#">Delete</a>
+									            </div>
+								            </div>
+							            </li>
+							
+							            <li class="list-group-item d-flex">
+								            <div class="rounded-circle bg-primary s1_profile_pic position-relative align-self-center  mr-1">
+									            <p class="text-white">N</p>
+								            </div>
+								
+								            <div class="s1_task_tekst mt-3 ml-4">
+									            <h3>New website for Smartschool</h3>
+									            <p class="text-danger"><i class="far fa-clock mr-2"></i>5 days delays</p>
+								            </div>
+								            <div class="dropdown my-auto ml-5">
+									            <button class="btn s1_optiemenu" type="button" id="dropdownMenuButton2"
+									                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										            <i class="fas fa-ellipsis-v fa-2x" style="color: #8492af;"></i>
+									            </button>
+									            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+										            <a class="dropdown-item" href="#">Wijzigen</a>
+										            <a class="dropdown-item" href="#">Messages</a>
+										            <a class="dropdown-item" href="#">Delete</a>
+									            </div>
+								            </div>
+							            </li>
+							
+							            <li class="list-group-item d-flex">
+								            <div class="rounded-circle bg-primary s1_profile_pic position-relative align-self-center  mr-1">
+									            <p class="text-white">N</p>
+								            </div>
+								
+								            <div class="s1_task_tekst mt-3 ml-4">
+									            <h3>New website for Smartschool</h3>
+									            <p class="text-danger"><i class="far fa-clock mr-2"></i>5 days delays</p>
+								            </div>
+								            <div class="dropdown my-auto ml-5">
+									            <button class="btn s1_optiemenu" type="button" id="dropdownMenuButton3"
+									                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										            <i class="fas fa-ellipsis-v fa-2x" style="color: #8492af;"></i>
+									            </button>
+									            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+										            <a class="dropdown-item" href="#">Wijzigen</a>
+										            <a class="dropdown-item" href="#">Messages</a>
+										            <a class="dropdown-item" href="#">Delete</a>
+									            </div>
+								            </div>
+							            </li>
+							
+							            <li class="list-group-item d-flex">
+								            <div class="rounded-circle bg-primary s1_profile_pic position-relative align-self-center  mr-1">
+									            <p class="text-white">N</p>
+								            </div>
+								
+								            <div class="s1_task_tekst mt-3 ml-4">
+									            <h3>New website for Smartschool</h3>
+									            <p class="text-danger"><i class="far fa-clock mr-2"></i>5 days delays</p>
+								            </div>
+								            <div class="dropdown my-auto ml-5">
+									            <button class="btn s1_optiemenu" type="button" id="dropdownMenuButton4"
+									                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										            <i class="fas fa-ellipsis-v fa-2x" style="color: #8492af;"></i>
+									            </button>
+									            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+										            <a class="dropdown-item" href="#">Wijzigen</a>
+										            <a class="dropdown-item" href="#">Messages</a>
+										            <a class="dropdown-item" href="#">Delete</a>
+									            </div>
+								            </div>
+							            </li>
+						            </div>
+						
+						            <div id="s1_shared" class="s1_task_content">
+							
+							            <li class="list-group-item d-flex">
+								            <div class="rounded-circle bg-danger s1_profile_pic position-relative align-self-center  mr-1">
+									            <p class="text-white">N</p>
+								            </div>
+								
+								            <div class="s1_task_tekst mt-3 ml-4">
+									            <h3>New website for Smartschool</h3>
+									            <p class="text-danger"><i class="far fa-clock mr-2"></i>5 days delays</p>
+								            </div>
+								            <div class="dropdown my-auto ml-5">
+									            <button class="btn s1_optiemenu" type="button" id="dropdownMenuButton5"
+									                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										            <i class="fas fa-ellipsis-v fa-2x" style="color: #8492af;"></i>
+									            </button>
+									            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton5">
+										            <a class="dropdown-item" href="#">Wijzigen</a>
+										            <a class="dropdown-item" href="#">Messages</a>
+										            <a class="dropdown-item" href="#">Delete</a>
+									            </div>
+								            </div>
+							            </li>
+							
+							            <li class="list-group-item d-flex">
+								            <div class="rounded-circle bg-danger s1_profile_pic position-relative align-self-center  mr-1">
+									            <p class="text-white">N</p>
+								            </div>
+								
+								            <div class="s1_task_tekst mt-3 ml-4">
+									            <h3>New website for Smartschool</h3>
+									            <p class="text-danger"><i class="far fa-clock mr-2"></i>5 days delays</p>
+								            </div>
+								            <div class="dropdown my-auto ml-5">
+									            <button class="btn s1_optiemenu" type="button" id="dropdownMenuButton6"
+									                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										            <i class="fas fa-ellipsis-v fa-2x" style="color: #8492af;"></i>
+									            </button>
+									            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+										            <a class="dropdown-item" href="#">Wijzigen</a>
+										            <a class="dropdown-item" href="#">Messages</a>
+										            <a class="dropdown-item" href="#">Delete</a>
+									            </div>
+								            </div>
+							            </li>
+							
+							            <li class="list-group-item d-flex">
+								            <div class="rounded-circle bg-danger s1_profile_pic position-relative align-self-center  mr-1">
+									            <p class="text-white">N</p>
+								            </div>
+								
+								            <div class="s1_task_tekst mt-3 ml-4">
+									            <h3>New website for Smartschool</h3>
+									            <p class="text-danger"><i class="far fa-clock mr-2"></i>5 days delays</p>
+								            </div>
+								            <div class="dropdown my-auto ml-5">
+									            <button class="btn s1_optiemenu" type="button" id="dropdownMenuButton7"
+									                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										            <i class="fas fa-ellipsis-v fa-2x" style="color: #8492af;"></i>
+									            </button>
+									            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton7">
+										            <a class="dropdown-item" href="#">Wijzigen</a>
+										            <a class="dropdown-item" href="#">Messages</a>
+										            <a class="dropdown-item" href="#">Delete</a>
+									            </div>
+								            </div>
+							            </li>
+							
+							            <li class="list-group-item d-flex">
+								            <div class="rounded-circle bg-danger s1_profile_pic position-relative align-self-center  mr-1">
+									            <p class="text-white">N</p>
+								            </div>
+								
+								            <div class="s1_task_tekst mt-3 ml-4">
+									            <h3>New website for Smartschool</h3>
+									            <p class="text-danger"><i class="far fa-clock mr-2"></i>5 days delays</p>
+								            </div>
+								            <div class="dropdown my-auto ml-5">
+									            <button class="btn s1_optiemenu" type="button" id="dropdownMenuButton8"
+									                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										            <i class="fas fa-ellipsis-v fa-2x" style="color: #8492af;"></i>
+									            </button>
+									            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton8">
+										            <a class="dropdown-item" href="#">Wijzigen</a>
+										            <a class="dropdown-item" href="#">Messages</a>
+										            <a class="dropdown-item" href="#">Delete</a>
+									            </div>
+								            </div>
+							            </li>
+						            </div>
+						
+						            <div id="s1_algemeen" class="s1_task_content">
+							            <li class="list-group-item d-flex">
+								            <div class="rounded-circle bg-dark s1_profile_pic position-relative align-self-center  mr-1">
+									            <p class="text-white">N</p>
+								            </div>
+								
+								            <div class="s1_task_tekst mt-3 ml-4">
+									            <h3>New website for Smartschool</h3>
+									            <p class="text-danger"><i class="far fa-clock mr-2"></i>5 days delays</p>
+								            </div>
+								            <div class="dropdown my-auto ml-5">
+									            <button class="btn s1_optiemenu" type="button" id="dropdownMenuButton9"
+									                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										            <i class="fas fa-ellipsis-v fa-2x" style="color: #8492af;"></i>
+									            </button>
+									            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton9">
+										            <a class="dropdown-item" href="#">Wijzigen</a>
+										            <a class="dropdown-item" href="#">Massages</a>
+										            <a class="dropdown-item" href="#">Delete</a>
+									            </div>
+								            </div>
+							            </li>
+							
+							            <li class="list-group-item d-flex">
+								            <div class="rounded-circle bg-dark s1_profile_pic position-relative align-self-center  mr-1">
+									            <p class="text-white">N</p>
+								            </div>
+								
+								            <div class="s1_task_tekst mt-3 ml-4">
+									            <h3>New website for Smartschool</h3>
+									            <p class="text-danger"><i class="far fa-clock mr-2"></i>5 days delays</p>
+								            </div>
+								            <div class="dropdown my-auto ml-5">
+									            <button class="btn s1_optiemenu" type="button" id="dropdownMenuButton10"
+									                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										            <i class="fas fa-ellipsis-v fa-2x" style="color: #8492af;"></i>
+									            </button>
+									            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton10">
+										            <a class="dropdown-item" href="#">Wijzigen</a>
+										            <a class="dropdown-item" href="#">Massages</a>
+										            <a class="dropdown-item" href="#">Delete</a>
+									            </div>
+								            </div>
+							            </li>
+							
+							            <li class="list-group-item d-flex">
+								            <div class="rounded-circle bg-dark s1_profile_pic position-relative align-self-center  mr-1">
+									            <p class="text-white">N</p>
+								            </div>
+								
+								            <div class="s1_task_tekst mt-3 ml-4">
+									            <h3>New website for Smartschool</h3>
+									            <p class="text-danger"><i class="far fa-clock mr-2"></i>5 days delays</p>
+								            </div>
+								            <div class="dropdown my-auto ml-5">
+									            <button class="btn s1_optiemenu" type="button" id="dropdownMenuButton11"
+									                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										            <i class="fas fa-ellipsis-v fa-2x" style="color: #8492af;"></i>
+									            </button>
+									            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton11">
+										            <a class="dropdown-item" href="#">Wijzigen</a>
+										            <a class="dropdown-item" href="#">Massages</a>
+										            <a class="dropdown-item" href="#">Delete</a>
+									            </div>
+								            </div>
+							            </li>
+							
+							            <li class="list-group-item d-flex">
+								            <div class="rounded-circle bg-dark s1_profile_pic position-relative align-self-center  mr-1">
+									            <p class="text-white">N</p>
+								            </div>
+								
+								            <div class="s1_task_tekst mt-3 ml-4">
+									            <h3>New website for Smartschool</h3>
+									            <p class="text-danger"><i class="far fa-clock mr-2"></i>5 days delays</p>
+								            </div>
+								            <div class="dropdown my-auto ml-5">
+									            <button class="btn s1_optiemenu" type="button" id="dropdownMenuButton12"
+									                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										            <i class="fas fa-ellipsis-v fa-2x" style="color: #8492af;"></i>
+									            </button>
+									            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton12">
+										            <a class="dropdown-item" href="#">Wijzigen</a>
+										            <a class="dropdown-item" href="#">Massages</a>
+										            <a class="dropdown-item" href="#">Delete</a>
+									            </div>
+								            </div>
+							            </li>
+						            </div>
+					            </ul>
+				            </div>
+				
+				            <!--EINDE Task-->
+				
+				            <!--BEGIN MESSAGES-->
+				            <div class="col-lg-4 mt-3 mt-lg-0">
+					            <ul class="list-group" id="s1_messages">
+						
+						            <li class="list-group-item">
+							            <header class="d-flex justify-content-between">
+								            <h2>Messages</h2>
+								            <div class="ml-5">
+									            <div class="rounded-circle badge badge-primary position-relative p-4">
+										            <p class="s1_badge_tekst">2</p>
+									            </div>
+								            </div>
+							            </header>
+						            </li>
+						
+						            <li class="list-group-item d-flex">
+							
+							            <div>
+								            <div class="rounded-circle bg-primary s1_profile_pic"></div>
+							            </div>
+							
+							            <div class="ml-3">
+								            <div>
+									            <h3 class="afzender">Nina Jones <span>5 minutes ago</span></h3>
+									            <p class="">Hey You! It's me again :-) I attached a new ddddddd</p>
+								            </div>
+								
+								            <div class="d-flex align-items-center">
+									            <a href=""><i class="fas fa-reply text-dark"></i></a>
+									            <div class="dropdown">
+										
+										            <button class="btn s1_optiemenu" type="button"
+										                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											            <i class="fas fa-cog text-dark"></i>
+										            </button>
+										
+										            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+											            <a class="dropdown-item" href="#">Gelezen</a>
+											            <a class="dropdown-item" href="#">Delete</a>
+										            </div>
+									            </div>
+								            </div>
+							
+							            </div>
+						            </li>
+						            <li class="list-group-item d-flex">
+							
+							            <div>
+								            <div class="rounded-circle bg-primary s1_profile_pic"></div>
+							            </div>
+							
+							            <div class="ml-3">
+								            <div>
+									            <h3 class="afzender">Nina Jones <span>5 minutes ago</span></h3>
+									            <p class="">Hey You! It's me again :-) I attached a new ddddddd</p>
+								            </div>
+								
+								            <div class="d-flex align-items-center">
+									            <a href=""><i class="fas fa-reply text-dark"></i></a>
+									            <div class="dropdown">
+										
+										            <button class="btn s1_optiemenu" type="button"
+										                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											            <i class="fas fa-cog text-dark"></i>
+										            </button>
+										
+										            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+											            <a class="dropdown-item" href="#">Gelezen</a>
+											            <a class="dropdown-item" href="#">Delete</a>
+										            </div>
+									            </div>
+								            </div>
+							
+							            </div>
+						            </li>
+						            <li class="list-group-item d-flex">
+							
+							            <div>
+								            <div class="rounded-circle bg-primary s1_profile_pic"></div>
+							            </div>
+							
+							            <div class="ml-3">
+								            <div>
+									            <h3 class="afzender">Nina Jones <span>5 minutes ago</span></h3>
+									            <p class="">Hey You! It's me again :-) I attached a new ddddddd</p>
+								            </div>
+								
+								            <div class="d-flex align-items-center">
+									            <a href=""><i class="fas fa-reply text-dark"></i></a>
+									            <div class="dropdown">
+										
+										            <button class="btn s1_optiemenu" type="button"
+										                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											            <i class="fas fa-cog text-dark"></i>
+										            </button>
+										
+										            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+											            <a class="dropdown-item" href="#">Gelezen</a>
+											            <a class="dropdown-item" href="#">Delete</a>
+										            </div>
+									            </div>
+								            </div>
+							
+							            </div>
+						            </li>
+						            <li class="list-group-item d-flex">
+							
+							            <div>
+								            <div class="rounded-circle bg-primary s1_profile_pic"></div>
+							            </div>
+							
+							            <div class="ml-3">
+								            <div>
+									            <h3 class="afzender">Nina Jones <span>5 minutes ago</span></h3>
+									            <p class="">Hey You! It's me again :-) I attached a new ddddddd</p>
+								            </div>
+								
+								            <div class="d-flex align-items-center">
+									            <a href=""><i class="fas fa-reply text-dark"></i></a>
+									            <div class="dropdown">
+										
+										            <button class="btn s1_optiemenu" type="button"
+										                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											            <i class="fas fa-cog text-dark"></i>
+										            </button>
+										
+										            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+											            <a class="dropdown-item" href="#">Gelezen</a>
+											            <a class="dropdown-item" href="#">Delete</a>
+										            </div>
+									            </div>
+								            </div>
+							
+							            </div>
+						            </li>
+					            </ul>
+				            </div>
+				            <!--EINDE MESSAGES-->
+				
+				            <div class="col-lg-4 mt-3 mt-lg-0">
+					            <ul class="list-group" id="activity">
+						
+						            <li class="list-group-item">
+							            <header class="d-flex justify-content-between">
+								            <h2>Activity</h2>
+								            <div class="ml-5">
+									            <div class="rounded-circle badge badge-primary position-relative p-4">
+										            <p class="s1_badge_tekst">2</p>
+									            </div>
+								            </div>
+							            </header>
+						            </li>
+						            <div id="bg_pixel">
+							            <li class="list-group-item d-flex  s1_activitylijn">
+								
+								            <div>
+									            <div class="rounded-circle bg-primary s1_profile_pic mt-2"></div>
+								            </div>
+								
+								            <div class="ml-3">
+									            <div>
+										            <p><strong>Nina jones </strong><span class="text-muted">added a new project </span><strong>Free UI Kit</strong></p>
+										            <p class="text-muted"><i class="far fa-clock"></i> just now</p>
+									            </div>
+								            </div>
+							            </li>
+							            <li class="list-group-item d-flex s1_activitylijn">
+								
+								            <div>
+									            <div class="rounded-circle bg-primary s1_profile_pic mt-2"></div>
+								            </div>
+								
+								            <div class="ml-3">
+									            <div>
+										            <p><strong>Nina jones </strong><span class="text-muted">added a new project </span><strong>Free UI Kit</strong></p>
+										            <p class="text-muted"><i class="far fa-clock"></i> just now</p>
+									            </div>
+								            </div>
+							            </li>
+							            <li class="list-group-item d-flex s1_activitylijn">
+								
+								            <div>
+									            <div class="rounded-circle bg-primary s1_profile_pic mt-2"></div>
+								            </div>
+								
+								            <div class="ml-3">
+									            <div>
+										            <p><strong>Nina jones </strong><span class="text-muted">added a new project </span><strong>Free UI Kit</strong></p>
+										            <p class="text-muted"><i class="far fa-clock"></i> just now</p>
+									            </div>
+								            </div>
+							            </li>
+							            <li class="list-group-item d-flex s1_activitylijn">
+								
+								            <div>
+									            <div class="rounded-circle bg-primary s1_profile_pic mt-2"></div>
+								            </div>
+								
+								            <div class="ml-3">
+									            <div>
+										            <p><strong>Nina jones </strong><span class="text-muted">added a new project </span><strong>Free UI Kit</strong></p>
+										            <p class="text-muted"><i class="far fa-clock"></i> just now</p>
+									            </div>
+								            </div>
+							            </li>
+						            </div>
+					            </ul>
+				            </div>
+			            </div>
+		            </div>
+	            </section>
+                
+            </main>
+            <footer>
+
+            </footer>
+        </div>
+
+    </div>
+</div>
+
+
+
+    <!--jquery-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--popper.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!--bootstrap.min.js-->
+    <script src="bootstrap-4.1.3/js/bootstrap.min.js"></script>
+    <!--moment.js-->
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.23.0/moment.min.js"></script>
+    <!--Full Calendar-->
+    <script src="assets/js/fullcalendar.min.js"></script>
+    <!--scripts-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

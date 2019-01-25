@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="login/register">  <!--Description for search engine-->
+    <meta name="keywords" content="HTML,CSS,SCSS,JavaScript,Bootstrap"> <!--keywords for search engine-->
+    <meta name="author" content="scrum team 3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> <!--Scale viewport "shrink-to-fit"default yes => can zoom on mobile if no,you can no longer zoom-->
+    <link rel="icon" href="#" type="image/gif" sizes="16x16">
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="bootstrap-4.1.3/css/bootstrap.min.css">
+    <!--style.css-->
+    <link rel="stylesheet" href="assets/css/login_style.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <!--inulr-->
+    <title>home</title>
+</head>
+<body class="container-fluid p-0">
+<!--<img src="assets/images/home_background_image.png" alt="background image" class="img-fluid">-->
+    <div class="container mx-auto position-absolute s3-content-wrap">
+
+    <div class="row">
+        <div class="col-12 col-lg-10 offset-lg-1">
+            <header class="row s3-bg-darkblue">
+                <nav class="navbar navbar-expand-lg navbar-light p-0 w-100">
+
+                <ul class="navbar-nav d-flex w-100">
+                    <li class="nav-item s3-register">
+                        <a class="nav-link text-white text-capitalize  p-3" href="#">Register</a>
+                    </li>
+                    <li class="nav-item active s3-login">
+                        <a class="nav-link text-white text-capitalize  p-3" href="#">login</a>
+                    </li>
+                    <!--<select class="custom-select ml-auto text-primary s3-lang-select text-uppercase border-0 s3-focus-off p-0">
+                        <option selected value="1">NL</option>
+                        <option value="2">EN</option>
+                        <option disabled value="3">whatever other language that exists on this godless green earth</option>
+                    </select>-->
+                </ul>
+
+            </nav>
+            </header>
+    <!--register window-->        <main class="row bg-white">
+                <div class="s3-register-form col-12">
+                    <div class="row">
+                        <h1 class="text-secondary d-block text-center mx-auto mt-2 mt-lg-5">
+                            Welcome
+                            <span class="text-primary">
+                        stranger &excl;
+                    </span>
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <form class="mx-auto w-50 mt-2 mt-lg-5">
+
+                            <div class="input-group mb-2 mr-sm-2">
+                                <input type="text" class="form-control text-secondary border-0 s3-focus-off" id="firstname" placeholder="Firstname" required>
+                                <input type="text" class="form-control text-secondary border-0 s3-focus-off" id="lastname" placeholder="Lastname" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control border-0 s3-focus-off" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
+                            </div>
+                            <div class="input-group mb-2 mr-sm-2">
+                                <div class="input-group-prepend ">
+                                    <div class="input-group-text bg-white border-0 "><i class="fas fa-eye text-primary s3-showandhide"></i></div>
+                                </div>
+                                <input type="password" class="form-control text-secondary border-0 s3-focus-off" id="PasswordReg" placeholder="Password" required>
+                                <ul class="s3-tooltip-text text-white bg-danger p-2 text-center position-fixed">
+                                    Uw wachtwoord moet minstens :
+                                    <li class=""> 8 characters bevatten.</li>
+                                    <li class=""> 2 getallen bevatten.</li>
+                                    <li class=""> 1 kleine letter bevatten.</li>
+                                    <li class=""> 1 hoofdletter bevatten.</li>
+                                    <li class=""> 1 speciaal character bevatten.</li>
+                                </ul>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="tel" class="form-control border-0 s3-focus-off" id="phonenumber"  placeholder="Phone number" required>
+                            </div>
+                            <div class="form-group">
+
+                                <select class="form-control border-0 s3-focus-off" id="role" required>
+                                    <option value="" disabled selected>Select a role...</option>
+                                    <option class="text-capitalize">Docent</option>
+                                    <option class="text-capitalize">admin</option>
+                                    <option class="text-capitalize">student</option>
+                                    <option class="text-capitalize">kitchen staff</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-50 s3-rounded-button mx-auto d-block mt-2 mb-2 mt-lg-5 mb-lg-5 s3-focus-off">Register</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-12 s3-login-form"><!--login window-->
+                    <div class="row">
+                        <h1 class="text-secondary d-block text-center mx-auto mt-2 mt-lg-5">
+                            Welcome
+                            <span class="text-primary">
+                        back &excl;
+                    </span>
+                        </h1>
+                    </div>
+                    <div class="row">
+                        <form class="mx-auto w-50 mt-2 mt-lg-5">
+
+                                <div class="input-group mb-2 mr-sm-2">
+
+                                    <div class="input-group-prepend ">
+                                        <div class="input-group-text bg-white border-0 "><i class="far fa-user text-primary"></i></div>
+                                    </div>
+                                    <!--username input-->
+                                    <input type="text" class="form-control text-secondary border-0 s3-focus-off" id="Username" placeholder="Username">
+                                </div>
+                            <div class="input-group mb-2 mr-sm-2">
+
+                                <div class="input-group-prepend ">
+                                    <div class="input-group-text bg-white border-0 "><i class="fas fa-lock text-primary"></i></div>
+                                </div>
+                                    <!--password input-->
+                                <input type="password" class="form-control text-secondary border-0 s3-focus-off" id="Password" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary w-50 s3-rounded-button mx-auto d-block mt-2 mb-2 mt-lg-5 mb-lg-5">Enter <i class="fas fa-caret-right text-white pl-auto"></i></button>
+                        </form>
+                    </div>
+                </div>
+
+            </main>
+            <footer>
+
+            </footer>
+        </div>
+    </div>
+    </div>
+
+    <!--jquery-->
+    <script src="assets/js/jquery.min.js"></script>
+    <!--popper.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <!--bootstrap.min.js-->
+    <script src="bootstrap-4.1.3/js/bootstrap.min.js"></script>
+    <!--scripts-->
+    <script src="assets/js/s3-home-script.js"></script>
+</body>
+
+</html>

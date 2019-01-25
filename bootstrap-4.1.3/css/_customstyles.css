@@ -1,0 +1,14 @@
+/*CUSTOM CSS FILE*/
+.s3-text-darkblue {
+  color: #0e1a35 !important; }
+
+.s3-list-style-none {
+  list-style: none; }
+
+.s3-side-bar {
+  width: 320px; }
+
+/*media queries*/
+/*Medium devices (tablets, 768px and up)MD*/
+/*Large devices (desktops, 992px and up)LG*/
+/*Extra large devices (large desktops, 1200px and up)XL*/
